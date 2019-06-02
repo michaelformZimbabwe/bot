@@ -6,4 +6,4 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands='start')
 def send_welcome(message):
-    bot.send_message(message,'Привет')
+    bot.reply_to(message,'Привет')
